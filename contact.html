@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Dajana">
+    <meta name="description" content="The contact form page">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="img/pcstra.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+
+        <nav aria-label="primary-navigation">
+            <table>
+                <tr>
+                    <td>
+                        <a href="index.html"><img src="img/logofull.png" alt="Pics&amp;Travel Logo" height="30"></a>
+                    </td>
+                    <td>
+                        <a href="index.html">Home</a>
+                    </td>
+                    <td>
+                        <a href="index.html#about">About P&amp;T</a>
+                    </td>
+                    <td>
+                        <a href="index.html#trips">Our Trips</a>
+                    </td>
+                    <td>
+                        <a href="gallery.html">Gallery</a>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+
+        <figure>
+            <img src="img/prague.jpg" alt="Prague Castle at Night" title="Prague Castle on a winter night" width="600" loading="lazy">
+            <figcaption>Prague Castle at Night</figcaption>
+        </figure>
+
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Book Your Trip!</h2>
+
+            <form action="https://httpbin.org/get" methog="get">
+                <fieldset>
+                    <legend>Send Us A Message</legend>
+
+                    <p>
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" name="fullName" id="fullName" placeholder="John Doe" autocomplete="off"
+                            required autofocus>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" placeholder="johndoe@email.com" autocomplete="off"
+                            required>
+                    </p>
+                    <p>
+                        <label for="message">Your Message:</label>
+                        <br>
+                        <textarea name="inputMessage" id="message" cols="30" rows="10"
+                            placeholder="Type Your Message Here"></textarea>
+                    </p>
+                </fieldset>
+                <br>
+
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </section>
+
+        <section>
+            <p>
+            <h3>Our Location</h3>
+            <address>
+                Traveler's Street 69B<br>
+                Instagram City 82000, Europe<br>
+                <br>
+                Phone: <a href="tel+012345678901">012-34-56-78-901</a>
+            </address>
+            </p>
+        </section>
+
+    </main>
+
+    <p>
+        <a href="#">Back to Top</a>
+    </p>
+    <hr>
+
+    <footer>
+        Copyright &copy; Pics&amp;Travel
+    </footer>
+</body>
+
+</html>
